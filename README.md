@@ -1,2 +1,3 @@
-# aws-eb-flask
-Example to deploy Flask application to AWS Elastic Beanstalk
+# Crypto Dashboard
+
+Crypto dashboard with AWS Elastic Beanstalk integration
