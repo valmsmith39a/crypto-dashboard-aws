@@ -1,8 +1,11 @@
 import json
 from flask import Flask, request
 from flask_cors import CORS
+from models import setup_db, Token
+
 
 application = Flask(__name__)
+# setup_db(application)
 CORS(application)
 
 
@@ -18,13 +21,13 @@ def get_tokens():
             {
                 "name": "Bitcoin",
                 "symbol": "BTC",
-                "current_price": "64,000",
+                "price": "64,000",
                 "sentiment_score": "89",
             },
             {
                 "name": "Ethereum",
                 "symbol": "ETH",
-                "current_price": "3900",
+                "price": "3900",
                 "sentiment_score": "80",
             },
         ]
